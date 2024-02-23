@@ -6,7 +6,7 @@ Javascript isomorphic 2D affine transformations written in ES6 syntax. Manipulat
 [![Coverage Status](https://coveralls.io/repos/github/chrvadala/transformation-matrix/badge.svg?branch=master)](https://coveralls.io/github/chrvadala/transformation-matrix?branch=master)
 [![npm](https://img.shields.io/npm/v/transformation-matrix.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/transformation-matrix)
 [![Downloads](https://img.shields.io/npm/dm/transformation-matrix.svg)](https://www.npmjs.com/package/transformation-matrix)
-[![Donate](https://img.shields.io/badge/donate-GithubSponsor-green.svg)](https://github.com/sponsors/chrvadala)
+[![Donate](https://img.shields.io/badge/donate-PayPal-green.svg)](https://www.paypal.me/chrvadala/25)
 
 # Features 
 Transformations, i.e. *linear invertible automorphisms*, are used to map a picture into another one with different size, position and orientation. Given a basis, transformations are represented by means of squared invertible matrices, called **transformation matrices**.
@@ -20,7 +20,6 @@ This library allows us to:
 - **decompose a matrix into translation, scaling and rotation components, with flip decomposition support**
 
 # Documentation
-- [How to handle gestures with transformation-matrix](https://github.com/chrvadala/transformation-matrix/blob/main/docs/gestures.md)
 - [APIs](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md)
   - Basic Operations
     - [`identity()`](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md#identity)
@@ -62,10 +61,6 @@ This library allows us to:
 
   - Decompose
     - [`decomposeTSR(matrix, flipX, flipY)`](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md#decomposeTSR)
-
-  - Moving points (gestures)
-    - [`fromOneMovingPoint (startingPoint, endingPoint)`](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md#fromonemovingpointstartingpoint-endingpoint)
-    - [`fromTwoMovingPoints (startingPoint1, startingPoint2, endingPoint1, endingPoint2)`](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md#fromTwoMovingPoints)
 
 # Install
 ```sh
@@ -125,11 +120,6 @@ applyToPoint(matrix, [16, 24]);
 - **2.9**- Adds `flipX()`, `flipY()`, `flipOrigin()` functions; Deprecates NodeJS 12 and adds NodeJS 16 support; Upgrades deps;  
 - **2.10** - Adds `decomposeTSR()` function [#88](https://github.com/chrvadala/transformation-matrix/pull/88); Upgrades deps;
 - **2.11** - Migrates from yarn to npm; Upgrades deps; New [APIs documentation](https://github.com/chrvadala/transformation-matrix/blob/main/docs/api.md); Integrates [chrvadala/github-actions](https://github.com/chrvadala/github-actions);
-- **2.12** - Migrates from PEG.js to Peggy [#89](https://github.com/chrvadala/transformation-matrix/pull/89); Upgrades deps;
-- **2.13** - Upgrades deps; Improves typescript definition; Upgrades gh-actions deps;
-- **2.14** - Upgrades deps; Adds `fromOneMovingPoint` and `fromTwoMovingPoints` functions [#95](https://github.com/chrvadala/transformation-matrix/pull/95)
-- **2.15** - Removes circular dependencies [#97](https://github.com/chrvadala/transformation-matrix/pull/97); Upgrades gh-actions and deps
-- **2.16** - Upgrades deps; Upgrades gh-actions deps;
 
 # Contributors
 - [chrvadala](https://github.com/chrvadala) (author)
@@ -146,7 +136,6 @@ applyToPoint(matrix, [16, 24]);
 - [formatlos](https://github.com/formatlos)
 - [benhjames](https://github.com/benhjames)
 - [hillin](https://github.com/hillin)
-- [jedrzejchalubek](https://github.com/jedrzejchalubek)
 
 # Some projects using transformation-matrix
 - [**React Planner**](https://github.com/cvdlab/react-planner)
